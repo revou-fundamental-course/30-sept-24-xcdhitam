@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en"></html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -11,17 +11,32 @@
             <div class="container">
                 <header><h1>Konversi Suhu</h1></header>
                 <main>
-                    <p>
-                        Masukkan suhu derajat Celsius (&#186;C) ke kotak di bawah, lalu klik tombol konveksi untuk mendapatkan hasil dalam bentuk Fahrenheit (&#186;F).
-                    </p>
-                    <hr>
-                    Celsius (&#186;C):
+                    <div class="content">
+                        <p>
+                            Masukkan suhu derajat Celsius (&#186;C) ke kotak di bawah, lalu klik tombol konveksi untuk mendapatkan hasil dalam bentuk Fahrenheit (&#186;F).
+                            <hr>
+                        </p>
+                        
+                        <div id="anu-Celcius">
+                            <p>Celsius (&#186;C):</p>
+                            <input type="number" name="celsius" id="incelcius"/>                            
+                            <button>Konveksi</button>
+                            <button>Reset</button>
+                            <button onclick="location.href='?reverse=Fahrenheit';">Reverse</button>
+                        </div>
+                        <div id="anu-Fahrenheit">
+                            <p>Fahrenheit (&#186;F)</p>
+                            <input type="number" name="fahrenheit" id="incelcius"/>                            
+                            <button>Konveksi</button>
+                            <button>Reset</button>
+                            <button onclick="location.href='?reverse=Celsius';">Reverse</button>
+                        </div>
 
                 </main>
                 <footer><div class="by">xfebrian</div></footer>
             </div>
         </div>
     </body>
-    <script src="js/script.js" id="berita-navigation-js"></script>
+    <script src="js/reverse.js" id="reverse-param"></script>
 </html>
 
